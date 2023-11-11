@@ -1,2 +1,179 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Kaushan+Script&family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="favicon.ico">
+    <style>
+        #check:checked~#hamburger_menu {
+            left: 0px;
+            transition-duration: 500ms;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 bg-fixed bg-cover" background="../static/img/background.jpg" style="">
+    <!-- This is the checkbox that decided whether the hamburger menu would be visible or not -->
+    <input type="checkbox" id="check" class="hidden">
+
+    <!-- This is the label for the checkbox #check and it is the menu button for the hamburger side menu -->
+    <label for="check" class="cursor-pointer md:hidden">
+        <i class="ri-menu-unfold-line text-black bg-white px-2 py-1 rounded text-3xl font-bold z-40 absolute top-4 left-4"></i>
+    </label>
+
+    <!-- This is the hamburger menu -->
+    <div id="hamburger_menu"
+        class="md:hidden w-[300px] h-screen bg-white border-2 border-white flex-col absolute rounded-tr-2xl rounded-br-2xl -left-[300px] duration-500 z-40">
+        <div class="w-full h-20 flex justify-start items-center p-4">
+            <label for="check" class="">
+                <i class="ri-menu-fold-line text-white bg-black p-1 rounded text-3xl font-extrabold"></i>
+            </label>
+        </div>
+
+        <div class="h-32 flex justify-center items-center">
+                <span style="font-family: Agbalumo;" class="text-5xl">
+                    CP Scraper
+                </span>
+        </div>
+
+        <!-- This is the list of all the navigation pages -->
+        <div class="w-full h-full flex-col py-10">
+            <ul class="text-black text-2xl flex-col space-y-2 overflow-y-hidden">
+                <li class="flex justify-start space-x-4 pl-6 hover:border bg-blue-600 text-white py-4">
+                    <a href="/" style="font-family: Agbalumo;">Home</a>
+                </li>
+                <li class="flex justify-start space-x-4 pl-6 hover:border hover:bg-blue-600 hover:text-white py-4">
+                    <a href="/learn" style="font-family: Agbalumo;">Learn</a>
+                </li>
+                <li class="flex justify-start space-x-4 pl-6 hover:border hover:bg-blue-600 hover:text-white py-4">
+                    <a href="/practise" style="font-family: Agbalumo;">Practise</a>
+                </li>
+                <li class="flex justify-start space-x-4 pl-6 hover:border hover:bg-blue-600 hover:text-white py-4">
+                    <a href="/compete" style="font-family: Agbalumo;">Compete</a>
+                </li>
+                <li class="flex justify-start space-x-4 pl-6 hover:border hover:bg-blue-600 hover:text-white py-4">
+                    <a href="#about_us" style="font-family: Agbalumo;">About us</a>
+                </li>
+                <li class="flex justify-start space-x-4 pl-6 hover:border hover:bg-blue-600 hover:text-white py-4">
+                    <a href="#contribute" style="font-family: Agbalumo;">Contribute</a>
+                </li>
+                <li class="flex justify-start space-x-4 pl-6 hover:border hover:bg-blue-600 hover:text-white py-4">
+                    <a href="#support_us" style="font-family: Agbalumo;">Support Us</a>
+                </li>
+            </ul>
+
+            <!-- These are all the social media handles list -->
+            <div id="social" class="mt-10">
+                <ul class="flex space-x-5 text-black text-3xl bottom-4 left-12 absolute pt-10">
+                    <a href="https://linkedin.com/in/sarathiparth"
+                        class="cursor-pointer duration-500 hover:scale-x-150 hover:scale-y-150 hover:500 ri-linkedin-box-fill"></a>
+                    <a href="https://twitter.com/vastavik_parth"
+                        class="cursor-pointer duration-500 hover:scale-x-150 hover:scale-y-150 hover:500 ri-twitter-fill"></a>
+                    <a href="https://instagram.in/vastavik_parth"
+                        class="cursor-pointer duration-500 hover:scale-x-150 hover:scale-y-150 hover:500 ri-instagram-line"></a>
+                    <a href="https://youtube.com/speedcoderparth"
+                        class="cursor-pointer duration-500 hover:scale-x-150 hover:scale-y-150 hover:500 ri-youtube-fill"></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the navbar that is going to be displayed on the pc and laptop and tablet screens -->
+    <nav class="hidden md:contents w-full h-[100px] fixed">
+        <div class="flex justify-between space-x-5 w-full h-[100px]">
+            <div class="flex justify-start items-center">
+                <span class="text-white text-4xl pl-10" style="font-family: Agbalumo">CP Scraper</span>
+            </div>
+
+            <!-- These are the nav links of the navbar -->
+            <div class="flex justify-end items-center pr-5">
+                <ul class="flex justify-between text-xl text-white">
+                    <li
+                        class="hover:bg-white/20 bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1 mr-1">
+                        <a href="#banner" style="font-family: 'Poppins';">Home</a>
+                    </li>
+                    <li
+                        class="hover:bg-white/20 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1">
+                        <a href="/learn" style="font-family: 'Poppins';">Learn</a>
+                    </li>
+                    <li
+                        class="hover:bg-white/20 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1">
+                        <a href="/practise" style="font-family: 'Poppins';">Practise</a>
+                    </li>
+                    <li
+                        class="hover:bg-white/20 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1">
+                        <a href="/compete" style="font-family: 'Poppins';">Compete</a>
+                    </li>
+                    <li
+                    class="hover:bg-white/20 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1">
+                    <a href="#contribute" style="font-family: 'Poppins';">Contribute</a>
+                    </li>
+                    <li
+                        class="hover:bg-white/20 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1">
+                        <a href="#about_us" style="font-family: 'Poppins';">About Us</a>
+                    </li>
+                    <li
+                        class="hover:bg-white/20 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white rounded-lg cursor-pointer px-5 py-1">
+                        <a href="#support_us" style="font-family: 'Poppins';">Support Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block mainblock%}
+
+    {% endblock %}
+
+   
+
+    <!-- this is the div for contributions -->
+    <div id="contribute" class="w-full h-[700px] md:h-[500px] bg-slate-950 flex justify-center items-center">
+        <div class="w-full md:w-[800px] bg-slate-950 flex-wrap md:flex p-10">
+            <div class="flex-col space-y-2">
+                <p style="font-family: Agbalumo;" class="text-white text-5xl pt-24">Contribute <br> To Our Docs!!
+                </p>
+                <p style="font-family: Agbalumo;" class="text-white text-xl flex justify-end">Click here ---></span>
+            </div>
+            
+            <a href="https://github.com/parthasdey2304/CPScrape">
+                <div class="w-full h-full md:w-[300px] md:h-[300px] p-8">
+                    <div class="w-full bg-white rounded-full p-4 hover:animate-spin">
+                        <img src="https://th.bing.com/th/id/R.5fb011c4cce7177d20864cacd414243d?rik=3E8j3eUWJcTFWQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_326384.png&ehk=wjNtP%2fRq0MO9KjRDtvcymW1NXDJ5orODhAFPVW306WA%3d&risl=&pid=ImgRaw&r=0" alt="Github Logo">
+                    </div>
+                </div>
+            </a>
+    
+        </div>
+    </div>
+
+    <!-- this is the div for support us -->
+    <div id="support_us" class="w-full h-[500px] bg-white flex-col p-10">
+        <span style="font-family: Agbalumo;" class="text-5xl">Support Us</span>
+        
+        <ul style="font-family: Agbalumo;" class="px-4 pt-10 text-3xl flex-col space-y-5">
+            <li class="text-pink-600"><a href="">Patreon</a></li>
+            <li class="text-blue-600"><a href="">LinkedIn</a></li>
+            <li class="text-gray-800"><a href="">GitHub</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
