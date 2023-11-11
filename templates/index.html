@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block mainblock %}
+
+ <!-- This is the banner of the main page -->
+ <div id="home" class="w-full flex justify-center items-center px-2 relative z-30 pt-16 md:pt-20">
+    <div class="w-full md:w-[1300px] h-full flex-wrap md:flex md:justify-between">
+        <div class="flex-col text-white p-4">
+            <span style="font-family: Agbalumo;" class="text-6xl md:text-8xl">Start, <br> Your CP<br> Journey <br> Here!!</span>
+            <br><br>
+            <span style="font-family: Agbalumo;" class="md:text-3xl">Get started with your DSA journey!!</span>
+        </div>
+
+        <!-- <div class="p-6 md:w-[600px] md:h-[600px]">
+            <div class="bg-white/30 rounded-full -skew-x-6 p-4">
+                <img src="../static/img/bannr_illustration.svg" alt="banner svg" class="md:w-54 md:h-54">
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<!-- this is the card tiles space -->
+<div id="cards" class="w-full flex justify-center">
+    <div class="w-full md:w-[1400px] h-[1540px] md:h-full flex-wrap md:flex justify-center space-x-0 md:space-x-10 space-y-10 md:space-y-0 p-10 pt-32">
+
+        <!-- card 1 -->
+        <a href="/learn">
+            <!-- <div class="w-full md:w-[400px] h-[400px] md:h-[500px] bg-blue-600 duration-300 hover:duration-300 hover:md:w-[420px] hover:md:h-[520px] hover:border-2 rounded-2xl p-10 mb-10"> -->
+            <div class="w-full md:w-[400px] h-[400px] md:h-[500px] bg-white/30 duration-300 hover:duration-300 hover:md:w-[420px] hover:md:h-[520px] hover:border-2 rounded-2xl p-10 mb-10">
+                <div class="w-full h-10 flex justify-center items-center">
+                    <span style="font-family: Agbalumo;" class="text-5xl text-white">Learn</span>
+                </div>
+    
+                <div class="pt-10">
+                    <img src="../static/img/card1.svg" alt="card 1 image">
+                </div>
+            </div>
+        </a>
+
+        <!-- card 2 -->
+        <a href="/practise">
+            <!-- <div class="w-full md:w-[400px] h-[400px] md:h-[500px] bg-green-600 duration-300 hover:duration-300 hover:md:w-[420px] hover:md:h-[520px] hover:border-2 rounded-2xl p-10 mb-10"> -->
+            <div class="w-full md:w-[400px] h-[400px] md:h-[500px] bg-white/30 duration-300 hover:duration-300 hover:md:w-[420px] hover:md:h-[520px] hover:border-2 rounded-2xl p-10 mb-10">
+                <div class="w-full h-10 flex justify-center items-center">
+                    <span style="font-family: Agbalumo;" class="text-5xl text-white">Practise</span>
+                </div>
+    
+                <div class="pt-10">
+                    <img src="../static/img/card2.svg" alt="card 2 image">
+                </div>
+            </div>
+        </a>
+
+        <!-- card 3 -->
+        <a href="/compete">
+            <!-- <div class="w-full md:w-[400px] h-[400px] md:h-[500px] bg-orange-600 duration-300 hover:duration-300 hover:md:w-[420px] hover:md:h-[520px] hover:border-2 rounded-2xl p-10 mb-10"> -->
+            <div class="w-full md:w-[400px] h-[400px] md:h-[500px] bg-white/30 duration-300 hover:duration-300 hover:md:w-[420px] hover:md:h-[520px] hover:border-2 rounded-2xl p-10 mb-10">
+                <div class="w-full h-10 flex justify-center items-center">
+                    <span style="font-family: Agbalumo;" class="text-5xl text-white">Compete</span>
+                </div>
+    
+                <div class="pt-20">
+                    <div class="w-full h-full bg-white rounded-full">
+                        <img src="../static/img/card3.svg" alt="card 3 image">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
