@@ -12,5 +12,5 @@ As university students, interns, tech enthusiasts or professionals, people tryin
 - And last but not the least, it also has practice materials like ladders, problem sheets containing famous and critical problems arranged according to their difficulties to help you make in in the game of CP. The practice materaials are arranged accoring to ratings of participants across websites (like codeforces and codechef) for example there is a sheet of problems for newbies, pupils, candidates, grandmasters and so on.
 
 ## Our target is to spread CPScrape to the entire competitive programming community to provide a smoother and more efficient approach to CP with minimum time loss to avoid that TLE (iykyk) <br>
-To contribute CPScrape read : [link to contributing.md] <br>
+To contribute CPScrape read : [CONTRIBUTING.md](https://github.com/Rohxn16/CPScrape/blob/main/CONTRIBUTING.md) <br>
 To support my work you can donate to me here
