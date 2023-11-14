@@ -15,7 +15,10 @@ def fetch_contests(url=URL):
     
     else:
         return f'Error : {res.status_code}'
-    
+
+def fetch_contest_count(): #returns the number of upcoming contests, can be used as a preview ih the /compete section
+    contests = fetch_contests()
+    return len(contests)
 
 # if __name__ == '__main__':
 #     upcoming = fetch_contests()
