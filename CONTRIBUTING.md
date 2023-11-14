@@ -19,5 +19,5 @@ Before you get started with CPScrape, you need to set it up in your local device
 
 # Found an Issue?
 
-In case ther is an issue that you are facing whether it is a bug in the actual live software or a problem in setting it up locally(first check [installation](https://github.com/Rohxn16/CPScrape/blob/main/INSTALLATION.md)), you can create a new issue [here](). Make sure that you describe the issue properly, providing all possible and relevant details, screenshots, os details, etc. Try looking for relevant issues or available solutions for similar issues through AI or tech forums and try applying those fixes before posting a new issue.
+In case ther is an issue that you are facing whether it is a bug in the actual live software or a problem in setting it up locally(first check [installation](https://github.com/Rohxn16/CPScrape/blob/main/INSTALLATION.md)), you can create a new issue [here](https://github.com/Rohxn16/CPScrape/issues). Make sure that you describe the issue properly, providing all possible and relevant details, screenshots, os details, etc. Try looking for relevant issues or available solutions for similar issues through AI or tech forums and try applying those fixes before posting a new issue.
 
